@@ -1,0 +1,90 @@
+
+    body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: darkmagenta;
+            color: #FFFFFF;
+        }
+        .header {
+            background-color: blueviolet;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .header .logo {
+            font-size: 24px;
+            font-weight: bold;
+            margin-right: auto;
+        }
+        .header .nav {
+            display: flex;
+            align-items: center;
+        }
+        .header .nav a {
+            color: #FFFFFF;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .header .nav a:hover {
+            text-decoration: underline;
+        }
+        .header .search {
+            display: flex;
+            align-items: center;
+        }
+        .header .search input[type="text"] {
+            padding: 5px;
+            border: none;
+            border-radius: 3px;
+        }
+        .header .search button {
+            padding: 5px 10px;
+            border: none;
+            background-color: #000000;
+            color: #FFFFFF;
+            border-radius: 3px;
+            margin-left: 5px;
+        }
+        .header .icons {
+            display: flex;
+            align-items: center;
+            margin-left: 20px;
+        }
+        .header .icons i {
+            font-size: 20px;
+            margin: 0 10px;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        .content h1 {
+            margin-bottom: 20px;
+        }
+        .courses {
+            display: flex;
+            justify-content: center;
+        }
+        .course-card {
+            background-color: #FFFFFF;
+            color: #000000;
+            border-radius: 5px;
+            overflow: hidden;
+            width: 300px;
+            margin: 10px;
+        }
+        .course-card img {
+            width: 100%;
+        }
+        .course-card .course-info {
+            padding: 10px;
+        }
+        .course-card .course-info .progress {
+            background-color: #F1C40F;
+            padding: 5px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .course-card .course-info .title {
+            margin-top: 10px;
+        }

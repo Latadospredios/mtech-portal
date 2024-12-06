@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal do Aluno</title>
+    <link rel="stylesheet" href="./portal.css">
+ 
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="./MTECH.png" alt="Logo">
+        </div>
+        <div class="title">PORTAL DO ALUNO</div>
+        
+    
+        <form id="loginForm">
+            <div class="form-group">
+                <i class="fas fa-envelope"></i>
+                <input id="email" name="email" placeholder="Digite o seu e-mail" type="email" required/>
+            </div>
+            <div class="form-group">
+                <i class="fas fa-lock"></i>
+                <input id="senha" name="senha" placeholder="Digite a sua senha" type="password" required/>
+            </div>
+            <button type="submit" class="btn"><a href="./portal2.html">CONTIUNAR</a> </button>
+         </form>
+ 
+    </div>
+
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const email = document.getElementById('email').value;
+            const senha = document.getElementById('senha').value;
+
+            if (!email || !senha) {
+                alert('Por favor, preencha todos os campos!');
+                return;
+            }
+
+     
+            if (email === "cauagabrielg5@gmail.com" && senha === "12345") {
+                
+                window.location.href = "portal.html"; 
+            } else {
+              
+                alert('Credenciais inválidas!');
+            }
+        });
+    </script>
+</body>
+</html>
